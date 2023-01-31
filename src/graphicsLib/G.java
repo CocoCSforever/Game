@@ -4,6 +4,8 @@ import java.awt.*;
 import java.util.Random;
 
 public class G {
+    public static G.V LEFT = new G.V(-1, 0), RIGHT = new G.V(1, 0);
+    public static G.V UP = new G.V(0, -1), DOWN = new G.V(0, 1);
     public static final Random RANDOM = new Random();
 
     public static int rnd(int max) {
