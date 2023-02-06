@@ -26,6 +26,7 @@ public class G {
     // Vector: two data points
     public static class V{
         public int x, y;
+        public V(){set(0, 0);}
         public V(int x, int y){set(x, y);}
         public void set(int x, int y){this.x = x; this.y = y;}// need existing vector object in order to set values for nonstatic functions
         public void set(V v) {this.x = v.x;this.y = v.y;}
