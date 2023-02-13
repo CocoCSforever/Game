@@ -19,8 +19,8 @@ public class Tetris extends Window implements ActionListener {
                                     Color.MAGENTA, Color.BLACK, Color.PINK};
     public static Shape[] shapes = {Shape.Z, Shape.S, Shape.J, Shape.L, Shape.I, Shape.O, Shape.T};
     public static Shape shape;
-    public static int iBack = 7;
-    public static int zap = 8; // index of empty space
+    public static int iBack = 7; // index of background(black)
+    public static int zap = 8; // index of empty space(pink)
     public static int[][] well = new int[W][H]; // grid of "dead" shapes
     public static int time = 1, iShape = 0;
 
@@ -103,6 +103,7 @@ public class Tetris extends Window implements ActionListener {
     }
     public static void dropNewShape(){
         shape = shapes[G.rnd(7)];
+//        shape = shapes[5]; // for testing
         shape.loc.set(4, 0); // set new shape centered to top
     }
     public static void main(String[] args){
